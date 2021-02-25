@@ -1,6 +1,7 @@
 $.ajaxPrefilter(function (options) {
     
-    options.url = 'http://ajax.frontend.itheima.net' + options.url
+    options.url = 'http://api-breakingnews-web.itheima.net' + options.url;
+
     console.log(options.url);
 
     //给/my/的接口统一添加请求头
