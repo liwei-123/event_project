@@ -35,7 +35,8 @@ $('#form_reg').on('submit', function(e) {
       username: $('#form_reg [name=username]').val(),
       password: $('#form_reg [name=password]').val()
     }
-    $.post('/api/reguser', data, function(res) {
+  $.post('/api/reguser', data, function (res) {
+      console.log(res);
       if (res.status !== 0) {
         return layer.msg(res.message)
       }
